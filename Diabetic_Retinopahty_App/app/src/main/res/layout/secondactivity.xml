@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shareLinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+
+    <TableLayout
+        android:id="@+id/tablelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severity level:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editseverity"
+                android:layout_width="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text">
+
+                <requestFocus />
+            </EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="severity level:"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/editpercenatge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:ems="10"
+                android:inputType="number" />
+
+        </TableRow>
+    </TableLayout>
+
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/grid_items_border"
+
+            android:layout_weight="2"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageViewbmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@mipmap/ic_launcher" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/grid_items_border"
+            android:layout_weight="3"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewbmp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="7"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/sharebutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/sharefinal"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout><!--
+<ImageView
+android:id="@+id/imageViewbmp"
+android:layout_width="150dp"
+android:layout_height="150dp"
+app:srcCompat="@mipmap/ic_launcher"
+android:layout_alignParentBottom="true"
+android:layout_centerHorizontal="true"
+android:layout_marginBottom="30dp" />-->

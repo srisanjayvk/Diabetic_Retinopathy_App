@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/eyegif">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/etfirstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="First name"
+            android:inputType="textPersonName"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/etlastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etfirstname"
+            android:layout_alignStart="@+id/etfirstname"
+            android:layout_below="@+id/etfirstname"
+            android:layout_marginTop="33dp"
+            android:ems="10"
+            android:hint="Last name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editemailaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etlastname"
+            android:layout_alignStart="@+id/etlastname"
+            android:layout_below="@+id/etlastname"
+            android:layout_marginTop="36dp"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editphoneno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editemailaddress"
+            android:layout_alignStart="@+id/editemailaddress"
+            android:layout_below="@+id/editemailaddress"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="Phone no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editphoneno"
+            android:layout_alignStart="@+id/editphoneno"
+            android:layout_below="@+id/editphoneno"
+            android:layout_marginTop="26dp"
+            android:ems="10"
+            android:hint="age"
+            android:inputType="phone" />
+
+        <RadioGroup
+            android:id="@+id/radioSex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editage"
+            android:layout_alignStart="@+id/editage"
+            android:layout_below="@+id/editage"
+            android:layout_marginTop="27dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="male" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/selectbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="@color/gplus_color_2"
+            android:text="submit" />
+    </RelativeLayout>
+
+</LinearLayout>
